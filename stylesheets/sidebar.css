@@ -1,0 +1,36 @@
+nav {
+  /* background: #aaa; */
+  width: 300px;
+  position: fixed;
+  top: 25px;
+  left: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+  opacity: .1;
+  transition: all .8s ease;
+}
+nav:hover{
+  opacity: 1;
+  transition: all .1s ease;
+  /* для подсветки при наведении */
+}
+nav p {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 14px;
+}
+nav a {
+  text-decoration: none;
+}
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  margin: 10px 0;
+  line-height: 20px;
+  /* межстрочное расстояние */
+}
+nav ul > ul {
+  margin-left: 10px;
+  color: #777;
+}
