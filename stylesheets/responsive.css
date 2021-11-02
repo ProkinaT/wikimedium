@@ -1,0 +1,43 @@
+@media all and (max-width: 1340px) {
+ .sidebar {
+  display: none;
+ }
+}
+/* пропадание сайдбара */
+@media all and (max-width: 1020px) {
+ article img { width: 100%; }
+}
+/* картинка */
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+article > * { width: calc(100% - 40px); }
+article p, article h1 + p, article blockquote, article ul, article img + ul, article li {
+  clear: both;
+  font-size: 30px;
+  line-height: 35px;
+   margin-top: 7px;
+  }
+}
+/* планшет */
+@media all and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+body { min-width: 320px; }
+article > * { width: calc(100% - 40px); }
+article p, article h1 + p, article blockquote, article ul, article img + ul, article li {
+  clear: both;
+  font-size: 18px;
+  line-height: 20px;
+   margin-top: 4px;
+  }
+  article img {
+     margin-top: 30px;
+  }
+  article h2, article h1, article img + h2 {
+    margin-top: 10px;
+  }
+
+}
+
+/* телефон */
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+ .sidebar { display: none; }
+}
+/* планшет горизонтальный режим */
