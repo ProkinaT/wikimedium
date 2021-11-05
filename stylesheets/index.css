@@ -22,10 +22,13 @@
   object-fit: cover;
 }
 .index-item h1{
+  font-family: 'PT Sans Caption',
+  sans-serif;
  margin-top: 10px;
  font-size: 38px;
   line-height: 45px;
 font-weight: bold;
+}
 }
 .index-item p{
 margin-top: 8px;
