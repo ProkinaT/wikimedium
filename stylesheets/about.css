@@ -1,0 +1,124 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+body {
+ width:1440px;
+ margin: 0 auto;
+ background: white;
+ height: 3252px;
+ display: block;
+ position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  /* background: url('images/about_1.jpg'); */
+  height: 3252px;
+  display: block;
+  opacity: .2;
+}
+html {
+  position: relative;
+  height: 100%;
+}
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 72px;
+  margin-left: 45px;
+}
+section div {
+  width: 50%;
+  overflow: hidden;
+}
+section h1 {
+  font-size: 40px;
+  margin-top: 60px;
+  margin-bottom: 33px;
+  margin-left: 25px;
+}
+section p {
+  font-size: 26px;
+  line-height: 1.5;
+  margin-left: 25px;
+}
+.text {
+  width: 580px;
+  margin: 0 auto;
+}
+section div:nth-of-type(2) h1{
+  margin-top: 85px;
+  margin-left: 30px;
+}
+section div:nth-of-type(2) p {
+ margin-top: 25px;
+ margin-left: 30px;
+}
+section div:nth-of-type(2) img {
+  height: 95%;
+  margin-left: 28px;
+}
+section div:nth-of-type(1) img {
+  margin-top: 34px;
+  margin-left: 47px;
+  height: 87%;
+}
+section:nth-of-type(3) div:nth-of-type(2) img {
+  margin-top: 78px;
+  margin-left: 28px;
+  height: 107%;
+}
+.one {
+  margin-top: 72px;
+}
+.two {
+  margin-top: 24px;
+}
+.bottom_block {
+  width: 800px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.bottom_block h1, .bottom_block p {
+  width: 800px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 25px;
+  padding-left: 5px;
+  padding-right: 20px;
+}
+section a {
+  border: 1px solid black;
+  margin-top: 90px;
+  text-decoration: none;
+}
+.btn:nth-of-type(1) {
+  margin-top: 82px;
+  padding: 20px 45px;
+  background: white;
+  border-radius: 4px;
+  display: inline-block;
+}
+.btn:nth-of-type(2) {
+   margin-top: 87px;
+   margin-left: 30px;
+   padding: 20px 70px;
+   background: black;
+   color: white;
+   border-radius: 4px;
+   display: inline-block;
+ }
