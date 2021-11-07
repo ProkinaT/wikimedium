@@ -16,7 +16,7 @@
       position: relative;
       /* чтобы прокручивалось */
     }
-    body::before{
+    /* body::before{
       content: "";
       position: absolute;
       left: 0;
@@ -26,7 +26,7 @@
       height: 3252px;
       display: block;
       opacity: .2;
-    }
+    } */
     html {
       position: relative;
       height: 100%;
@@ -35,7 +35,8 @@
       display: flex;
       justify-content: space-between;
       /* разделение на 2 блока */
-
+      margin-top: 72px;
+      margin-left:45px;
     }
     section div {
       width: 50%;
@@ -46,42 +47,65 @@
       font-size: 40px;
       margin-top: 60px;
       margin-bottom: 38px;
+      margin-left: 25px;
     }
     section p {
       font-size: 26px;
       /* такие штуки можно будет посмотреть в фигме */
       line-height: 1.5;
       /* высота межстрочки в пропорции */
+      margin-left: 25px;
     }
     .text {
-      width: 520px;
+      width: 580px;
       margin: 0 auto;
       /* выравнивание */
     }
-    section div:nth-of-type(2) h1,
-    section div:nth-of-type(2) p {
+    section div:nth-of-type(2) h1{
+      margin-top: 85px;
       margin-left: 30px;
+    }
+    section div:nth-of-type(2) p {
+      margin-top: 25px;
+      margin-left: 30px;
+    }
+    section div:nth-of-type(2) img {
+      height: 95%;
+      margin-left: 28px;
     }
     section div:nth-of-type(1) img {
       margin-top: 34px;
+      margin-left: 47px;
+      height: 87%
     }
-    section div:nth-of-type(3):nth-of-type(2) img {
-      margin-top: 60px;
+    section:nth-of-type(3) div:nth-of-type(2) img {
+      margin-top: 78px;
+      margin-left: 28px;
+      height: 107%;
     }
     .one {
       margin-top: 72px;
       /* веб инспектор (просмотреть код) для подвижек */
     }
     .two {
-      margin-top: 20px;
+      margin-top: 24px;
     }
     .bottom_block {
       width: 800px;
       display: block;
       margin: 0 auto;
       text-align: center;
-      padding-top: 80px;
+      padding-top: 100px;
       /* отступ */
+    }
+    .bottom_block h1, .bottom_block p {
+      width: 800px;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 25px;
+      padding-left: 5px;
+      padding-right: 20px;
     }
 
     section a {
@@ -90,13 +114,23 @@
       /* поменять отступ после изменения текста */
       text-decoration: none;
     }
-    .btn {
-      padding: 15px 40px;
+    .btn:nth-of-type(1) {
+      margin-top: 82px;
+      padding: 20px 45px;
       background: white;
       border-radius: 4px;
-      display: inline-block;
+      display: inline-block;}
       /* позицирование чтобы включить марджин только для кнопок */
-    }
+      .btn:nth-of-type(2) {
+        margin-top: 87px;
+        margin-left: 30px;
+        padding: 20px 70px;
+        background: black;
+        color: white;
+        border-radius: 4px;
+        display: inline-block;
+      }
+
   </style>
 </head>
 <body>
@@ -121,25 +155,25 @@
     </div>
     <div class="">
       <h1>С нуля до первого сайта<br>под компьютеры, смартфоны<br>и планшеты</h1>
-      <p>Чтобы начать изучать веб-вёрстку на этом проекте, не требуется каких-то специальных знаний, кроме базового умения пользоваться компьютером</p>
+      <p>Чтобы начать изучать веб-вёрстку на этом проекте, не&nbsp;требуется каких-то специальных знаний, кроме базового умения пользоваться компьютером</p>
     </div>
   </section>
   <!-- 3 -->
     <section class="one">
       <div class="text">
-        <h1>Наглядный пример,<br>чтобы учиться веб-вёртске</h1>
-        <p>Разработан для изучения основ веб-вёрстки, языка гипертекстовой разметки HTML и&nbsp;каскадных таблиц стилей CSS</p>
+        <h1>Реальный проект, реальный рабочий процесс</h1>
+        <p>Обучение приближено к работе в реальной жизни, работа разбита на этапы от типографики, создания меню и&nbsp;использования эффектов до адаптации под мобильные устройства и использования JavaScript скриптов.</p>
       </div>
       <div>
-        <img src="images/about3.png" alt="">
+        <img src="images/about_4.png" alt="">
       </div>
     </section>
     <!-- 4 -->
     <section class="bottom_block">
-      <h1>Наглядный пример,<br>чтобы учиться веб-вёртске</h1>
-      <p>Разработан для изучения основ веб-вёрстки, языка гипертекстовой разметки HTML и&nbsp;каскадных таблиц стилей CSS</p>
-      <a class="btn" href="#">Исходный код на ГитХаб</a>
-      <a class="btn" href="#">Курс в школе дизайна</a>
+      <h1>Возможность самостоятельного<br>и курируемого обучения</h1>
+      <p>Вы можете обучаться самостоятельно по исходному коду проекта, выложенному на GitHub, или записаться на курс "Основы веб-&nbsp;вёрстки" в Школе Дизайна НИУ ВШЭ</p>
+      <a class="btn" href="#">Исходный код на Github</a>
+      <a class="btn" href="#">Курс в Школе Дизайна</a>
     </section>
 
 </body>
